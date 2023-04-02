@@ -7,9 +7,9 @@ import (
 
 	"github.com/shopspring/decimal"
 
-	"github.com/prisma/prisma-client-go/runtime/types/raw"
-	"github.com/prisma/prisma-client-go/test"
-	"github.com/prisma/prisma-client-go/test/helpers/massert"
+	"github.com/bangbaew/prisma-client-go/runtime/types/raw"
+	"github.com/bangbaew/prisma-client-go/test"
+	"github.com/bangbaew/prisma-client-go/test/helpers/massert"
 )
 
 type cx = context.Context

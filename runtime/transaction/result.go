@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/prisma/prisma-client-go/logger"
+	"github.com/bangbaew/prisma-client-go/logger"
 )
 
 type Result struct {

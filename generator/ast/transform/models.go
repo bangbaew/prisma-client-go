@@ -1,8 +1,8 @@
 package transform
 
 import (
-	"github.com/prisma/prisma-client-go/generator/ast/dmmf"
-	"github.com/prisma/prisma-client-go/generator/types"
+	"github.com/bangbaew/prisma-client-go/generator/ast/dmmf"
+	"github.com/bangbaew/prisma-client-go/generator/types"
 )
 
 type Model struct {

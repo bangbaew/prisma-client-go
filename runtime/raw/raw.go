@@ -8,10 +8,10 @@ import (
 
 	"github.com/shopspring/decimal"
 
-	"github.com/prisma/prisma-client-go/engine"
-	"github.com/prisma/prisma-client-go/logger"
-	"github.com/prisma/prisma-client-go/runtime/builder"
-	"github.com/prisma/prisma-client-go/runtime/types/raw"
+	"github.com/bangbaew/prisma-client-go/engine"
+	"github.com/bangbaew/prisma-client-go/logger"
+	"github.com/bangbaew/prisma-client-go/runtime/builder"
+	"github.com/bangbaew/prisma-client-go/runtime/types/raw"
 )
 
 type Raw struct {

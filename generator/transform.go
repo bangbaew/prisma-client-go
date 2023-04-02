@@ -3,7 +3,7 @@ package generator
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/prisma/prisma-client-go/generator/ast/transform"
+	"github.com/bangbaew/prisma-client-go/generator/ast/transform"
 	"os"
 )
 

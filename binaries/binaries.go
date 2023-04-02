@@ -10,8 +10,8 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/prisma/prisma-client-go/binaries/platform"
-	"github.com/prisma/prisma-client-go/logger"
+	"github.com/bangbaew/prisma-client-go/binaries/platform"
+	"github.com/bangbaew/prisma-client-go/logger"
 )
 
 // PrismaVersion is a hardcoded version of the Prisma CLI.

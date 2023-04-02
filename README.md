@@ -4,9 +4,9 @@
     <h2>Prisma Client Go</h2>
     <p><h3 align="center">Typesafe database access for Go</h3></p>
     <div>
-        <a href="https://github.com/prisma/prisma-client-go/releases"><img src="https://img.shields.io/github/v/release/prisma/prisma-client-go" /></a>
+        <a href="https://github.com/bangbaew/prisma-client-go/releases"><img src="https://img.shields.io/github/v/release/prisma/prisma-client-go" /></a>
         <span>&nbsp;&nbsp;</span>
-        <a href="https://github.com/prisma/prisma-client-go/actions/workflows/test.yml"><img src="https://github.com/prisma/prisma-client-go/actions/workflows/test.yml/badge.svg" /></a>
+        <a href="https://github.com/bangbaew/prisma-client-go/actions/workflows/test.yml"><img src="https://github.com/bangbaew/prisma-client-go/actions/workflows/test.yml/badge.svg" /></a>
         <span>&nbsp;&nbsp;</span>
         <a href="#contributing"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" /></a>
         <span>&nbsp;&nbsp;</span>
@@ -35,7 +35,7 @@
 
 ## Deprecation note
 
-**Prisma Client Go is no longer officially maintained**. Read [this issue](https://github.com/prisma/prisma-client-go/issues/707) to learn more.
+**Prisma Client Go is no longer officially maintained**. Read [this issue](https://github.com/bangbaew/prisma-client-go/issues/707) to learn more.
 
 ## Description
 
@@ -43,7 +43,7 @@ Prisma Client Go is an **auto-generated query builder** that enables **type-safe
 
 It is part of the [Prisma](https://www.prisma.io/) ecosystem. Prisma provides database tools for data access, declarative data modeling, schema migrations and visual data management.
 
-_NOTE_: Prisma Client Go is currently offered under our [early access program](https://www.prisma.io/docs/about/releases#product-maturity-levels). There will be documented breaking changes with new [releases](https://github.com/prisma/prisma-client-go/releases).
+_NOTE_: Prisma Client Go is currently offered under our [early access program](https://www.prisma.io/docs/about/releases#product-maturity-levels). There will be documented breaking changes with new [releases](https://github.com/bangbaew/prisma-client-go/releases).
 
 ## Getting started
 
@@ -53,15 +53,15 @@ You also might want to read [deployment tips](./docs/deploy.md) and the [full AP
 
 ## Notes
 
-The go client works slightly different than the normal Prisma tooling. When you're using the go client, whenever you see Prisma CLI commands such as `prisma ...`, you should always write `go run github.com/prisma/prisma-client-go ...` instead.
+The go client works slightly different than the normal Prisma tooling. When you're using the go client, whenever you see Prisma CLI commands such as `prisma ...`, you should always write `go run github.com/bangbaew/prisma-client-go ...` instead.
 
 If you just work with the Go client and don't have (or want) the NodeJS Prisma CLI installed, you can set up an alias so that you can write `prisma` commands as usual, but it'll invoke the real locally bundled Prisma CLI. To do that, edit your `~/.bashrc` or `~/.zshrc` and add:
 
 ```
-alias prisma="go run github.com/prisma/prisma-client-go"
+alias prisma="go run github.com/bangbaew/prisma-client-go"
 ```
 
-Now `prisma generate` and any other command will work, and it'll just run 1`go run github.com/prisma/prisma-client-go generate` under the hood.
+Now `prisma generate` and any other command will work, and it'll just run 1`go run github.com/bangbaew/prisma-client-go generate` under the hood.
 
 ## Contributing
 

@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/prisma/prisma-client-go/test/cmd"
-	"github.com/prisma/prisma-client-go/test/setup"
+	"github.com/bangbaew/prisma-client-go/test/cmd"
+	"github.com/bangbaew/prisma-client-go/test/setup"
 )
 
 const containerName = "go-client-postgres"

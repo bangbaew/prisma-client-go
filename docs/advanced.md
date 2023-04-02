@@ -40,7 +40,7 @@ model Post {
     }
 
     generator db {
-        provider = "go run github.com/prisma/prisma-client-go"
+        provider = "go run github.com/bangbaew/prisma-client-go"
     }
 
     model Post {
@@ -69,7 +69,7 @@ model Post {
 Whenever you make changes to your model, migrate your database and re-generate your prisma code:
 
 ```shell script
-go run github.com/prisma/prisma-client-go migrate dev --name add_comment_model
+go run github.com/bangbaew/prisma-client-go migrate dev --name add_comment_model
 ```
 
 In order to create comments, we first need to create a post, and then reference that post when creating a comment.

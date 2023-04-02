@@ -6,9 +6,9 @@ import (
 	"os/exec"
 	"path"
 
-	"github.com/prisma/prisma-client-go/binaries"
-	"github.com/prisma/prisma-client-go/binaries/platform"
-	"github.com/prisma/prisma-client-go/logger"
+	"github.com/bangbaew/prisma-client-go/binaries"
+	"github.com/bangbaew/prisma-client-go/binaries/platform"
+	"github.com/bangbaew/prisma-client-go/logger"
 )
 
 // Run the prisma CLI with given arguments

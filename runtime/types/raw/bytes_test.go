@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/prisma/prisma-client-go/test/helpers/massert"
+	"github.com/bangbaew/prisma-client-go/test/helpers/massert"
 )
 
 func TestBytes_UnmarshalJSON(t *testing.T) {

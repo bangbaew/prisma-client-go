@@ -7,9 +7,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/prisma/prisma-client-go/engine"
-	"github.com/prisma/prisma-client-go/logger"
+	"github.com/bangbaew/prisma-client-go/engine"
+	"github.com/bangbaew/prisma-client-go/logger"
+	"go.opentelemetry.io/otel"
 )
+
+var tracer = otel.Tracer("prisma-client-go")
 
 type Input struct {
 	Name     string
@@ -251,6 +254,9 @@ func (q Query) Exec(ctx context.Context, into interface{}) error {
 }
 
 func (q Query) Do(ctx context.Context, payload interface{}, into interface{}) error {
+	_, span := tracer.Start(ctx, q.Name)
+	defer span.End()
+
 	if q.Engine == nil {
 		return fmt.Errorf("client.Prisma.Connect() needs to be called before sending queries")
 	}
