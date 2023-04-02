@@ -12,7 +12,7 @@ import (
 	"go.opentelemetry.io/otel"
 )
 
-var tracer = otel.Tracer("prisma-client-go")
+var tracer = otel.Tracer("prisma-client-go_v0.17.0")
 
 type Input struct {
 	Name     string
@@ -254,7 +254,7 @@ func (q Query) Exec(ctx context.Context, into interface{}) error {
 }
 
 func (q Query) Do(ctx context.Context, payload interface{}, into interface{}) error {
-	_, span := tracer.Start(ctx, q.Name)
+	_, span := tracer.Start(ctx, fmt.Sprintf("%s: %s %s", q.Operation, q.Method, q.Model))
 	defer span.End()
 
 	if q.Engine == nil {
